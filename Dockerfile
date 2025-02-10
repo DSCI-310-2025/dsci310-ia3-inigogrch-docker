@@ -5,6 +5,9 @@ USER root
 # Install renv
 RUN Rscript -e "install.packages('renv', repos = 'https://cloud.r-project.org')"
 
+# Install crayon (to demonstrate GitHub Actions workflow is functional)
+RUN Rscript -e "install.packages('crayon', repos = 'https://cloud.r-project.org')"
+
 # Copy just the lockfile first (and only re-restore if this changes)
 COPY renv.lock /home/rstudio/project/renv.lock
 
