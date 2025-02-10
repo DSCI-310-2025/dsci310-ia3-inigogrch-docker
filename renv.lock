@@ -1,0 +1,57 @@
+{
+  "R": {
+    "Version": "4.4.2",
+    "Repositories": [
+      {
+        "Name": "CRAN",
+        "URL": "https://packagemanager.posit.co/cran/latest"
+      }
+    ]
+  },
+  "Packages": {
+    "cowsay": {
+      "Package": "cowsay",
+      "Version": "1.0.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "crayon",
+        "rlang"
+      ],
+      "Hash": "c6d1ce48e53f1326c238618287832926"
+    },
+    "crayon": {
+      "Package": "crayon",
+      "Version": "1.5.3",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "grDevices",
+        "methods",
+        "utils"
+      ],
+      "Hash": "859d96e65ef198fd43e82b9628d593ef"
+    },
+    "renv": {
+      "Package": "renv",
+      "Version": "1.0.11",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "utils"
+      ],
+      "Hash": "47623f66b4e80b3b0587bc5d7b309888"
+    },
+    "rlang": {
+      "Package": "rlang",
+      "Version": "1.1.5",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "utils"
+      ],
+      "Hash": "724dcc1490cd7071ee75ca2994a5446e"
+    }
+  }
+}

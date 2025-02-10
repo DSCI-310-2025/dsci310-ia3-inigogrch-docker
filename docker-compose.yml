@@ -1,0 +1,12 @@
+services:
+  analysis-env:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8787:8787"
+    volumes:
+      - .:/home/rstudio/project
+    environment:
+      PASSWORD: "password"
+      DISABLE_AUTH: true
